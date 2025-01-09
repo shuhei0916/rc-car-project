@@ -2,11 +2,11 @@ from gpiozero import Servo, PWMOutputDevice
 import time
 
 # モーター設定
-motor_pwm_forward = PWMOutputDevice(pin=29)  # 前進用ピン
-motor_pwm_backward = PWMOutputDevice(pin=31)  # 後進用ピン
+motor_pwm_forward = PWMOutputDevice(pin=12)  # 前進用ピン
+motor_pwm_backward = PWMOutputDevice(pin=13)  # 後進用ピン
 
 # サーボモーター設定
-servo = Servo(11)  # GPIO 11 ピンに接続
+servo = Servo(12)  # GPIO 11 ピンに接続
 
 def dc_motor_test():
     print("モーターを前進させます...")
