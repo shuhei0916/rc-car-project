@@ -3,11 +3,11 @@ from evdev import InputDevice, ecodes
 import numpy as np
 
 # DCモーター設定
-motor_pwm_forward = PWMOutputDevice(pin=29)  # 前進用
-motor_pwm_backward = PWMOutputDevice(pin=31)  # 後進用
+motor_pwm_forward = PWMOutputDevice(pin=12)  # 前進用
+motor_pwm_backward = PWMOutputDevice(pin=13)  # 後進用
 
 # サーボモーター設定
-servo = Servo(11)
+servo = Servo(12)
 
 # コントローラー設定
 device = InputDevice('/dev/input/event0')
