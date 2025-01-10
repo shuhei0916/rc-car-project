@@ -28,7 +28,7 @@ def measure_pandas_read_speed(filename):
 
 # メイン処理
 def main():
-    filename = "sample_data.csv"
+    filename = "data/sample_data.csv"
     print("サンプルデータを生成中...")
     generate_sample_csv(filename)
     
